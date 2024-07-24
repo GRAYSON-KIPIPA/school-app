@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 
 const Dashboard = () => {
@@ -12,13 +12,13 @@ const Dashboard = () => {
     <p class="card-text">
         <ul>
             <h4>First Year</h4>
-            <li>Semester One</li>
+            <li><Link to={'/results'}>Semester One</Link></li>
             <li>Semester Two</li>
-            
+            <hr/>
               <h4>Second Year</h4>
             <li>Semester One</li>
             <li>Semester Two</li>
-            
+            <hr/>
               <h4>Third Year</h4>
             <li>Semester One</li>
             <li>Semester Two</li>
